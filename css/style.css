@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'Chedros';
-    src: url('.../fonts/chedros.ttf') format('truetype');
+    src: url('../fonts/chedros.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Smooch';
-    src: url('.../fonts/SmoochSans-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/SmoochSans-VariableFont_wght.otf') format('opentype');
 }
 
 :root {
@@ -20,7 +20,7 @@
     --cor3: #D92525;
     /* Fontes */
     --fonte-padrao: Arial, sans-serif;
-    --fonte-dif: 'Smooch', 'Bebas Neue', Helvetica, sans-serif;
+    --fonte-dif: 'Smooch', Arial, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive, Arial, sans-serif;
 }
 
@@ -99,7 +99,7 @@ section > h1 > span {
 }
 
 main > article {
-    background-color: #C4C4C4;
+    background-color: #5c1d21;
     min-width: 300px;
     max-width: 1200px;
     margin: auto;
@@ -108,11 +108,13 @@ main > article {
 }
 
 main h2 {
-    color: var(--cor0);
+    color: black;
+    background-color: white;
     font-family: var(--fonte-destaque);
     font-size: 2em;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.342);
 }
 
 main h3 {
@@ -124,35 +126,46 @@ main h3 {
 
 main p {
     font-family: var(--fonte-dif);
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: justify;
-    padding: 20px;
-    text-indent: 50px;
-    letter-spacing: 0.8px;
-    font-size: 0.9em;
-    font-weight: 600;
+    padding: 50px;
+    text-indent: 30px;
+    letter-spacing: 1.7px;
+    font-size: 1em;
+    font-weight: 800;
     line-height: 2em;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.466);
+}
+
+aside a {
+    text-decoration: none;
+    color: #a0a0f0;
+}
+
+aside span {
+    color: #a0a0f0;
 }
 
 main ul {
+    color: #dfdede;
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
-    text-align: justify;
     text-align: center;
-    padding: 5px;
-    columns: 1;
+    margin: -50px 0px 0px 0px;
     font-family: var(--fonte-dif);
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 15px;
+    columns: 1;
 }
 
 .linkcurso {
     text-decoration: none;
-    color: #2222FF;
+    color: #a0a0f0;
 }
 
 .linkcurso:hover {
-    color: #044040;
+    color: #ffffff;
 }
 
 .interacao {
