@@ -178,6 +178,7 @@ main ul {
     width: 150px;
     height: 150px;
     border-radius: 10px;
+    transition-duration: 0.7s;
 }
 
 .int1 > h3 {
@@ -191,6 +192,11 @@ main ul {
     border-style: hidden;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+}
+
+.cliquesd {
+    text-align: center;
+    font-size: 1px;
 }
 
 footer {
