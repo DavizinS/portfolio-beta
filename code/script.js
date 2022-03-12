@@ -6,7 +6,12 @@ let res = document.getElementById('cliques')
 let ligado = false
 let cliques = 0
 /* --------------------- */
-
+/* Calculadora */
+let n1 = document.getElementById('txtn1')
+let n2 = document.getElementById('txtn2')
+let calculo = document.getElementById('res')
+/*----------------------------------------- */
+/* Função da Lampada */
 function onoff() {
     cliques += 1
     if (ligado == false)  {
@@ -28,4 +33,11 @@ function onoff() {
     } else if (cliques == 100) {
         window.alert('Na moral, vou te tirar do site kkkkk 100 VEZES JÁ!')
     }
+}
+
+/* Função da Calculadora */
+function finalizar() {
+    let num1 = Number(n1.value)
+    let num2 = Number(n2.value)
+    calculo.innerHTML = `${num1} + ${num2} é igual á = ${num1 + num2}`
 }
