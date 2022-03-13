@@ -11,6 +11,12 @@ let n1 = document.getElementById('txtn1')
 let n2 = document.getElementById('txtn2')
 let calculo = document.getElementById('res')
 /*----------------------------------------- */
+/* Hora */
+document.getElementById('hora')
+let data = new Date()
+let horas = data.getHours()
+let minutos = data.getMinutes()
+
 /* Função da Lampada */
 function onoff() {
     cliques += 1
@@ -41,3 +47,4 @@ function finalizar() {
     let num2 = Number(n2.value)
     calculo.innerHTML = `${num1} + ${num2} é igual á = ${num1 + num2}`
 }
+hora.innerHTML = `${horas} H ${minutos} m. No horário do seu sistema.`

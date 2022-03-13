@@ -232,6 +232,10 @@ main ul {
    margin-left: 200px;
 }
 
+.horario {
+    padding: 10px;
+}
+
 footer {
     color: white;
     text-align: center;
