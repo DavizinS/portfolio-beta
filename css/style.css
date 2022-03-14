@@ -238,6 +238,7 @@ main ul {
 
 footer {
     color: white;
+    font-family: var(--fonte-dif);
     text-align: center;
     margin-top: 600px;
     background-color: var(--cor2);
